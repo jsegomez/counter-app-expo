@@ -12,7 +12,7 @@ export default function FloatingActionButton({ onPress, title, position }: Float
     <View>
         <TouchableOpacity
             onPress={onPress}
-            style={[styles.floatingBotton, position === 'right' ? { right: 20 } : { left: 20 }]}
+            style={[styles.floatingBotton, position === 'right' ? { right: 30 } : { left: 30 }]}
         >
             <Text style={{color: '#fff', textAlign: 'center'}}>{title}</Text>
         </TouchableOpacity>
@@ -23,7 +23,6 @@ export default function FloatingActionButton({ onPress, title, position }: Float
 const styles = StyleSheet.create({
     floatingBotton: {
         position: 'absolute',
-        bottom: 30,
         backgroundColor: '#65558f',
         padding: 20,
         width: 65,

@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
   },
 
   buttonContainer: {
-    backgroundColor: '#000000',
     position: 'absolute',
-    bottom: 30,
+    bottom: 100,
     width: '100%',
+    minHeight: 10
   },
 });
