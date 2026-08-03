@@ -10,11 +10,11 @@ export default function App() {
       <Text style={styles.textHuge}>{count}</Text>
 
       <TouchableOpacity onPress={() => setCount(count + 1)} style={styles.floatingBottonRight}>
-        <Text style={{color: '#fff'}}>+1</Text>
+        <Text style={{color: '#fff', textAlign: 'center'}}>+1</Text>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => setCount(count - 1)} style={styles.floatingBottonLeft}>
-        <Text style={{color: '#fff'}}>-1</Text>
+        <Text style={{color: '#fff', textAlign: 'center'}}>-1</Text>
       </TouchableOpacity>
 
       <StatusBar style="auto" />
@@ -38,11 +38,11 @@ const styles = StyleSheet.create({
 
   floatingBottonLeft: {
     position: 'absolute',
-    bottom: 20,
+    bottom: 30,
     left: 20,
     backgroundColor: '#65558f',
     padding: 20,
-    width: 60,
+    width: 65,
     borderRadius: 15,
     shadowColor: '#000',
     shadowOffset: {
@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
 
   floatingBottonRight: {
     position: 'absolute',
-    bottom: 20,
+    bottom: 30,
     right: 20,
-    width: 60,
     backgroundColor: '#65558f',
     padding: 20,
     borderRadius: 15,
+    width: 65,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
