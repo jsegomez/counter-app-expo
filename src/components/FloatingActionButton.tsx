@@ -11,6 +11,7 @@ export default function FloatingActionButton({ onPress, title, position }: Float
   return (
     <View>
         <TouchableOpacity
+            activeOpacity={0.7}
             onPress={onPress}
             style={[styles.floatingBotton, position === 'right' ? { right: 30 } : { left: 30 }]}
         >

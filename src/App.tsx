@@ -14,7 +14,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.textHuge}>{count}</Text>
-      <Text>Veamos si se esta actualizando</Text>
+      <Text>Valor del contador</Text>
 
       <View style={styles.buttonContainer}>
         <FloatingActionButton onPress={() => handlePress(1)} title="+" position="right" />
